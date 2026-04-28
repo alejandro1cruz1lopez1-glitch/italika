@@ -1,14 +1,13 @@
 <?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
-// 1. CONEXIÓN (Ajustada a tu DB 'italikacinco')
+
 $conexion = mysqli_connect("localhost", "alejandro", "AAbb11..", "italikacinco");
 
 if (!$conexion) {
     die("Fallo la conexión: " . mysqli_connect_error());
 }
 
-// 2. ACCIÓN: ELIMINAR (DELETE)
 if (isset($_GET['eliminar'])) {
     $id = $_GET['eliminar'];
     mysqli_query($conexion, "DELETE FROM refacciones WHERE id=$id");
@@ -16,7 +15,6 @@ if (isset($_GET['eliminar'])) {
     exit();
 }
 
-// 3. ACCIÓN: CREAR (CREATE)
 if (isset($_POST['guardar'])) {
     $nom = $_POST['nombre'];
     $cant = $_POST['cantidad'];
@@ -29,7 +27,11 @@ if (isset($_POST['guardar'])) {
     exit();
 }
 ?>
-
+<?php
+$consulta_conteo = mysqli_query($conexion, "SELECT COUNT(*) as total FROM refacciones");
+$datos_conteo = mysqli_fetch_assoc($consulta_conteo);
+$total_productos = $datos_conteo['total'];
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -70,8 +72,12 @@ if (isset($_POST['guardar'])) {
 
             <div class="col-md-8">
                 <div class="card border-0 shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title mb-3">Gestión de Inventario</h5>
+                    <div class="card-body"><div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="card-title mb-0">Gestión de Inventario</h5>
+                    <div class="alert alert-info py-1 px-3 mb-0 shadow-sm">
+                        <strong>Total de productos:</strong> <?php echo $total_productos; ?>
+                    </div>
+                </div>
                         <table class="table table-hover">
                             <thead class="table-light">
                                 <tr><th>ID</th><th>Nombre</th><th>Stock</th><th>Precio</th><th>Acciones</th></tr>
