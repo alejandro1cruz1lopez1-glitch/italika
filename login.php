@@ -8,7 +8,7 @@
 
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
-            <span class="navbar-brand">ITALIKA_cinco</span>
+            <a href="index.php" class="navbar-brand fw-bold">ITALIKA_cinco</a>
             <a href="index.php" class="btn btn-outline-light btn-sm">Regresar</a>
         </div>
     </nav>
