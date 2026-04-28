@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 // 1. CONEXIÓN (Ajustada a tu DB 'italikacinco')
 $conexion = mysqli_connect("localhost", "root", "", "italikacinco");
 
