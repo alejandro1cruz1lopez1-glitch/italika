@@ -3,7 +3,7 @@ $nombre_usuario = $_POST['nombre'];
 $n_control = $_POST['n_control'];
 $password = $_POST['password'];
 
-if ($n_control ==$password {
+if ($n_control ==$password) {
     header("Location: inventario.php?user=" $nombre_usuario);
     exit();
 
