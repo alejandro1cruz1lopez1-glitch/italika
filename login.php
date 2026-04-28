@@ -53,7 +53,7 @@
         <hr class="mt-5">
 
         <footer class="text-center py-3">
-            <p><strong>Alumno:</strong> Tu Nombre Real | <strong>No. Control:</strong> Tu Matrícula</p>
+            <p><strong>Alumno:</strong> Alejandro Cruz López | <strong>No. Control:</strong> 24160584</p>
             <p>Tecnológico Nacional de México - Instituto Tecnológico de Oaxaca</p>
             <p>&copy; 2026 - Taller de Sistemas Operativos</p>
         </footer>
