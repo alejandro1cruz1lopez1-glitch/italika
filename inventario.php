@@ -43,7 +43,7 @@ $total_productos = $datos_conteo['total'];
 
     <nav class="navbar navbar-dark bg-dark mb-4 shadow">
         <div class="container">
-            <span class="navbar-brand fw-bold">ITALIKA_cinco</span>
+            <a href="index.php" class="navbar-brand fw-bold">ITALIKA_cinco</a>
             <a href="login.php" class="btn btn-outline-light btn-sm">Salir</a>
         </div>
     </nav>
