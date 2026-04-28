@@ -1,6 +1,6 @@
 <?php
 // CONEXIÓN
-$conexion = mysqli_connect("localhost", "root", "", "italika_db");
+$conexion = mysqli_connect("localhost", "root", "", "italikacinco");
 
 // ACCIÓN: ELIMINAR (DELETE)
 if (isset($_GET['eliminar'])) {
