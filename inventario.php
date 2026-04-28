@@ -23,7 +23,6 @@ if (isset($_POST['guardar'])) {
     $pre = $_POST['precio'];
     $cat = $_POST['categoria'];
     
-    // Insertamos en tu tabla 'refacciones'
     $query = "INSERT INTO refacciones (nombre, cantidad, precio, categoria) VALUES ('$nom', $cant, $pre, '$cat')";
     mysqli_query($conexion, $query);
     header("Location: inventario.php");
@@ -89,7 +88,7 @@ if (isset($_POST['guardar'])) {
                                     <td><span class="badge bg-secondary"><?php echo $f['cantidad']; ?></span></td>
                                     <td>$<?php echo number_format($f['precio'], 2); ?></td>
                                     <td>
-                                        <button class="btn btn-sm btn-info text-white">Editar</button>
+                                        <a href="editar_refaccion.php?id=<?php echo $f['id']; ?>" class="btn btn-sm btn-info text-white">Editar</a>
                                         <a href="inventario.php?eliminar=<?php echo $f['id']; ?>" 
                                            class="btn btn-sm btn-danger" 
                                            onclick="return confirm('¿Eliminar esta refacción?')">Borrar</a>
