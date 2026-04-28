@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-$conexion = mysqli_connect("localhost", "alejandro", "AAbb11..", "italikacinco");
+$conexion = mysqli_connect("localhost", "dev_user", "user*2026", "italikacinco");
 
 if (!$conexion) {
     die("Fallo la conexión: " . mysqli_connect_error());
