@@ -4,10 +4,8 @@ $n_control = $_POST['n_control'];
 $password = $_POST['password'];
 
 if ($n_control ==$password {
-    
-    echo "<h1>¡Bienvenido, " . $nombre_usuario . "!</h1>";
-    echo "<p>Has ingresado correctamente al sistema de Italika.</p>";
-    echo "<br><a href='index.php'>Cerrar Sesión</a>";
+    header("Location: inventario.php");
+    exit();
 
 } else {
     echo "<h1>Error de acceso</h1>";
