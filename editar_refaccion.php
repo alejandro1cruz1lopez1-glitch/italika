@@ -1,5 +1,5 @@
 <?php
-$conexion = mysqli_connect("localhost", "alejandro", "AAbb11..", "italikacinco");
+$conexion = mysqli_connect("localhost", "dev_user", "User*2026", "italikacinco");
 
 // 1. Obtener los datos actuales de la refacción
 if (isset($_GET['id'])) {
