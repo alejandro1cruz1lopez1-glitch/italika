@@ -25,7 +25,7 @@
                 <form action="validar.php" method="POST" class="border p-4 shadow-sm rounded">
                     
                     <div class="mb-3">
-                        <label class="form-label fw-bold">Número de Control del tec</label>
+                        <label class="form-label fw-bold">Número de Control</label>
                         <div class="input-group">
                             <input type="text" name="n_control" class="form-control" placeholder="Ej. 21160000" required>
                             <span class="input-group-text text-muted">@itoaxaca.edu.mx</span>
