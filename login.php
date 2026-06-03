@@ -18,7 +18,7 @@
             <div class="col-md-5">
                 
                 <div class="text-center mb-4">
-                    <h1 class="fw-bold">Ingr333333esar al Sistema</h1>
+                    <h1 class="fw-bold">Ingresar al Sistema</h1>
                     <p class="text-muted">Identifícate para gestionar el inventario</p>
                 </div>
 
